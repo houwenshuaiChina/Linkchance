@@ -7,7 +7,6 @@ import pandas as pd
     连接数据库
     args：db_name（数据库名称）
     returns:db
-
 '''
 
 def mysql_link(db_name):
@@ -25,7 +24,7 @@ def mysql_link(db_name):
 
 def open_csv(csv_file):
     try:
-        df_dict = {}
+        # df_dict = {}
         df_dict = pd.read_csv(csv_file, sep='\t', encoding="utf-8")
         return df_dict
     except:
